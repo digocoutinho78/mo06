@@ -1,0 +1,23 @@
+function calculaArea() {
+
+ let base = prompt("Digite o valor da base em centímetros. (utilize ponto para valores fracionados)")
+
+ base = parseFloat(base)
+
+ alert("Você digitou " + base + " cm")
+
+ let altura = prompt("Digite o valor da altura em centímetros. (utilize ponto valores fracionados)")
+
+ altura = parseFloat(altura)
+
+ alert("Você digitou " + altura + " cm")
+
+ let areaTotal = base * altura / 10000              //converte  para metros 
+
+  areaTotal = parseFloat(areaTotal.toFixed(2))              // converte para float e limita as decimais 
+
+ alert("O resultado da área é: " + areaTotal + " metros quadrado(s)")
+
+ return areaTotal
+
+}
